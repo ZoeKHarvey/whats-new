@@ -10,8 +10,6 @@ const NewsContainer = ({news}) => {
         image={news.img}
         headline={news.headline}
         description={news.description}
-        
-
       />
     )
     
