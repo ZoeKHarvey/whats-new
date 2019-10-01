@@ -1,10 +1,10 @@
 import React from 'react';
 import './NewsArticle.css';
 
-const Card = (props) => {
+const NewsArticle = () => {
   return (
-    <div>
-      <h3>{ props.title }</h3>
+    <div className="news">
+      <h3>News!</h3>
     </div>
   )
 }
