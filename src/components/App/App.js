@@ -20,8 +20,8 @@ class App extends Component {
     return (
       <div className="app">
         <h1>What's New?</h1>
-        <NewsContainer name="me" />
-        {/* <SearchForm news={ this.state.local} /> */}
+        <NewsContainer news={this.state.local} />
+        
       </div>
     );
   }
