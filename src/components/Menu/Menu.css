@@ -3,12 +3,12 @@
   color: white;
   height: 7vh;
   width: 105%;
-  font-size: 29px;
+  font-size: 20px;
   margin-left: 17%;
   text-align: initial;
   border-top-right-radius: 119px;
   border-bottom-right-radius: 119px;
-  padding-left: 53px;
+  padding-left: 30px;
   margin-top: 10%;
 }
 
@@ -17,11 +17,12 @@
 .menu {
   display: flex;
   flex-direction: column;
-  margin-top: 10%;
+  margin-top: 7%;
 
 }
 
 .menu button:hover {
   background-color: #FFAE03;
   cursor: pointer;
+  width: 122%;
 }
