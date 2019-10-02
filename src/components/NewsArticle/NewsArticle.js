@@ -1,5 +1,6 @@
 import React from 'react';
 import './NewsArticle.css';
+import arrow from '../../images/right-arrow.svg';
 
 const NewsArticle = ({ headline, image, description} ) => {
   return (
@@ -9,7 +10,11 @@ const NewsArticle = ({ headline, image, description} ) => {
       </div>
       <h3>{ headline }</h3>
       <p>{ description }</p>
-      <button>Link To Article</button>
+      <footer>
+      <p className="footer__p">Link To Article</p>
+      <img className="img__arrow" src={arrow}/>
+      </footer>
+      
       
     </article>
   )

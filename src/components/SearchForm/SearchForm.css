@@ -4,7 +4,7 @@
   display: flex;
   width: 75%;
   margin-left: 17%;
-  margin-top: 0%;
+  margin-top: .5%;
   display: flex;
   justify-content: space-between;
   background-color: #141527;
@@ -16,12 +16,17 @@ input,
   height: 55%;
   margin-top: 2%;
   border: none;
-  font-size: 77px;
+  font-size: 25px;
 }
 
 input {
   width: 50%;
   background-color: #141527;
+  color: white;
+}
+
+input:hover {
+  border: 1px solid #FFA30E;
 }
 
 .button__search {
@@ -29,4 +34,8 @@ input {
   width: 20%;
   background-color: #B56AF0;
   color: white;
+}
+
+.button__search:hover {
+  cursor: pointer;
 }
