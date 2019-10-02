@@ -2,13 +2,18 @@ import React, { Component } from 'react';
 import local from '../../data/local';
 import './App.css';
 import NewsContainer from '../NewsContainer/NewsContainer';
-// import SearchForm from './SearchForm'
+import Menu from '../Menu/Menu';
+import SearchForm from '../SearchForm/SearchForm';
+import entertainment from '../../data/entertainment';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      local
+      local,
+      entertainment,
+      
+
    
 
       
@@ -18,11 +23,12 @@ class App extends Component {
 
   render () {
     return (
-      <div className="app">
-        <h1>What's New?</h1>
+      <main className="app">
+        <h1>What's <span>New?</span></h1>
+        <SearchForm />
+        <Menu />
         <NewsContainer news={this.state.local} />
-        
-      </div>
+      </main>
     );
   }
 }

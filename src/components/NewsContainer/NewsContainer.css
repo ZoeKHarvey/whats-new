@@ -1,12 +1,7 @@
 .news-container {
-  columns: 2;
-  column-gap: 5%;
   overflow: scroll;
   height: 100vh;
+  margin-top: 11%;
   
 }
 
-img {
-  max-width: 100%;
-  height: auto
-}

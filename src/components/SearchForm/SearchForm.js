@@ -1,29 +1,14 @@
 import React, { Component } from 'react';
 import './SearchForm.css';
 
-// class SearchForm extends Component {
-//   constructor() {
-//     super();
-
-
-//   }
-
-
-
-//   render() {
-//     return (
-//       <form>
-//         <input
-//           type="text"
-//           placeholder="Search for local news articles here."
-//         />
-  
-//         <button>Search Now</button>
-//       </form>
-//     )
-//   }
-
-// }
+const SearchForm = () => {
+  return (
+    <div className="search-form">
+    <input type="text" placeholder="Search local news here."></input>
+    <button className="button__search">Search Now</button>
+    </div>
+  )
+}
 
 
 export default SearchForm;

@@ -10,4 +10,18 @@
   height: 100vh;
   text-align: center;
   width: 100%;
+  overflow: scroll;
+  position: absolute;
+}
+
+h1 {
+  color: white;
+  font-size: 113px;
+  position: absolute;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+span {
+  color: #FFA30E
 }

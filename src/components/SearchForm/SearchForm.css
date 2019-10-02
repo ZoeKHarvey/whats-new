@@ -1,0 +1,32 @@
+.search-form {
+  position: absolute;
+  height: 12vh;
+  display: flex;
+  width: 75%;
+  margin-left: 17%;
+  margin-top: 0%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #141527;
+}
+
+input,
+.button__search {
+  padding: -3%;
+  height: 55%;
+  margin-top: 2%;
+  border: none;
+  font-size: 77px;
+}
+
+input {
+  width: 50%;
+  background-color: #141527;
+}
+
+.button__search {
+  border-radius: 125px;
+  width: 20%;
+  background-color: #B56AF0;
+  color: white;
+}
