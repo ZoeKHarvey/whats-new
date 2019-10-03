@@ -1,4 +1,4 @@
-.menu button {
+li {
   background-color: #141527;
   color: white;
   height: 7vh;
@@ -10,6 +10,7 @@
   border-bottom-right-radius: 119px;
   padding-left: 30px;
   margin-top: 10%;
+  list-style: none;
 }
 
 
@@ -21,7 +22,7 @@
 
 }
 
-.menu button:hover {
+li:hover {
   background-color: #FFAE03;
   cursor: pointer;
   width: 122%;
