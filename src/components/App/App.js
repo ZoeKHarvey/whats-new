@@ -23,7 +23,7 @@ class App extends Component {
    
   }
 
-  selectNews = (topic) => {
+  selectSubject = (subject) => {
     this.setState({
       currentSubject: topic,
       
@@ -35,7 +35,9 @@ class App extends Component {
       <main className="app">
         <h1>What's <span>New?</span></h1>
         <SearchForm />
-        <Menu />
+        <Menu 
+        chooseNews={this.selectSubject}
+        />
         <NewsContainer news={this.state.local} />
       </main>
     );
