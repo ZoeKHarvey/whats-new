@@ -1,5 +1,6 @@
 div img {
   width: 100%;
+  height: 36vh;
 }
 
 /* .news { 
@@ -15,6 +16,8 @@ div img {
   background-color: white;
   margin-right: 5%;
   margin-bottom: 5%;
+  position: relative;
+  height: 79vh;
 }
 
   
@@ -26,14 +29,26 @@ div img {
 
 }
 
+a {
+  position: absolute;
+  bottom: 0;
+  left: 0
+}
+
 h3 {
-  font-size: 2em;
+  font-size: 1.5em;
   margin-top: 5%;
+}
+
+.description__p {
+  position: absolute;
+  bottom: 16%;
 }
 
 p {
   font-size: 1em;
   margin: 3%;
+ 
 }
 
 footer {
@@ -61,7 +76,8 @@ footer:hover {
 
 .img__arrow {
   width: 11%;
-  margin-right: 18%
+  margin-right: 18%;
+  height: 7vh;
 }
 
 

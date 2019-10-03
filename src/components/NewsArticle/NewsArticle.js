@@ -11,7 +11,7 @@ const NewsArticle = ({ headline, image, description, url} ) => {
         <img src={image} />
       </div>
       <h3>{ headline }</h3>
-      <p>{ description }</p>
+      <p className="description__p">{ description }</p>
       <a className="footer__p" href={url}>Link To Article>
       <footer>
       
