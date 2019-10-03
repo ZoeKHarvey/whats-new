@@ -18,14 +18,14 @@ class App extends Component {
       health,
       science,
       technology,
-      currentSubject = local
+      currentSubject: local
     }
    
   }
 
   selectSubject = (subject) => {
     this.setState({
-      currentSubject: topic,
+      currentSubject: subject,
       
     })
   }
@@ -36,7 +36,8 @@ class App extends Component {
         <h1>What's <span>New?</span></h1>
         <SearchForm />
         <Menu 
-        chooseNews={this.selectSubject}
+        selectSubject={this.selectSubject}
+        categories={this.state}
         />
         <NewsContainer news={this.state.local} />
       </main>
