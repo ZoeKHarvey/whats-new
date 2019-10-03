@@ -27,6 +27,7 @@ class App extends Component {
   selectSubject = (subject) => {
     this.setState({
       currentSubject: subject,
+      searchedTopic: subject
       
     })
   }
@@ -34,10 +35,11 @@ class App extends Component {
   searchArticle = (input) => {
     const searched = input;
     this.setState({
-      currentTopic: this.state.searchedTopic
+      currentSubject: this.state.searchedTopic
         .filter(article => article.headline.includes(searched))
     })
   }
+  
 
   render () {
     let currentSubject = this.state.currentSubject
