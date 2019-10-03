@@ -17,9 +17,17 @@ class App extends Component {
       entertainment,
       health,
       science,
-      technology
+      technology,
+      currentSubject = local
     }
-    this.state.current = local
+   
+  }
+
+  selectNews = (topic) => {
+    this.setState({
+      currentSubject: topic,
+      
+    })
   }
 
   render () {
