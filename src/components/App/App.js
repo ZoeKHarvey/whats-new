@@ -31,6 +31,7 @@ class App extends Component {
   }
 
   render () {
+    let currentSubject = this.state.currentSubject
     return (
       <main className="app">
         <h1>What's <span>New?</span></h1>
@@ -39,7 +40,8 @@ class App extends Component {
         selectSubject={this.selectSubject}
         categories={this.state}
         />
-        <NewsContainer news={this.state.local} />
+        <NewsContainer 
+          currentSubject={currentSubject}/>
       </main>
     );
   }

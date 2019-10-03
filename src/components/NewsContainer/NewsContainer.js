@@ -2,8 +2,8 @@ import React from 'react';
 import './NewsContainer.css'
 import NewsArticle from '../NewsArticle/NewsArticle';
 
-const NewsContainer = ({news}) => {
-  const newsCards = news.map(news => {
+const NewsContainer = ({currentSubject}) => {
+  const newsCards = currentSubject.map(news => {
     
     return (
       <NewsArticle
