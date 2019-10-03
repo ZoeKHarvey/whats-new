@@ -1,8 +1,18 @@
-.news-container {
+  .news-container {
+    overflow: scroll;
+    height: 100vh;
+    margin-top: 8%;
+    margin-left: 3%;
+    column-count: 2;
+
+  }
+
+
+/* .news-container {
   overflow: scroll;
   height: 100vh;
   margin-top: 8%;
   margin-left: 3%;
   
-}
+} */
 
