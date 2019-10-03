@@ -12,12 +12,13 @@ const NewsArticle = ({ headline, image, description, url} ) => {
       </div>
       <h3>{ headline }</h3>
       <p>{ description }</p>
+      <a className="footer__p" href={url}>Link To Article>
       <footer>
-      <a className="footer__p" href={url}>Link To Article</a>
-      {/* <p className="footer__p">Link To Article</p> */}
+      
+      <p className="footer__p">Link To Article</p>
       <img className="img__arrow" src={arrow}/>
       </footer>
-      
+      </a>
       
     </article>
   )

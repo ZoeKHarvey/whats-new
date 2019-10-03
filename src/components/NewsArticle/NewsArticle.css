@@ -52,8 +52,11 @@ footer:hover {
   cursor: pointer;
 }
 
-footer p {
+.footer__p {
   font-size:21px;
+  color: white;
+  text-decoration: none;
+
 }
 
 .img__arrow {
