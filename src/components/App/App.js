@@ -18,7 +18,8 @@ class App extends Component {
       health,
       science,
       technology,
-      currentSubject: local
+      currentSubject: local,
+      searchedTopic: local
     }
    
   }
@@ -30,12 +31,20 @@ class App extends Component {
     })
   }
 
+  searchArticle = (input) => {
+    const searched = input;
+    this.setState({
+      currentTopic: this.state.searchedTopic
+        .filter(article => article.headline.includes(searched))
+    })
+  }
+
   render () {
     let currentSubject = this.state.currentSubject
     return (
       <main className="app">
         <h1>What's <span>New?</span></h1>
-        <SearchForm />
+        <SearchForm searchArticle={this.searchArticle} />
         <Menu 
         selectSubject={this.selectSubject}
         categories={this.state}

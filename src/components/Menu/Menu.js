@@ -2,8 +2,7 @@ import React from 'react';
 import './Menu.css'
 
 const Menu = ({selectSubject, categories}) => {
-  console.log(categories)
-  const menuButtons = Object.keys(categories).splice(0, 5).map((key, index) => {
+    const menuButtons = Object.keys(categories).splice(0, 5).map((key, index) => {
     return <li onClick={() => selectSubject(categories[key])} key={index}>{key}</li>
   });
 
