@@ -10,6 +10,7 @@ const NewsContainer = ({currentSubject}) => {
         image={news.img}
         headline={news.headline}
         description={news.description}
+        url={news.url}
       />
     )
     
