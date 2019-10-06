@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsArticle should match the snapshot with all data passed in correctly 1`] = `
+<div
+  className="menu"
+>
+  <ul>
+    <li
+      key="0"
+      onClick={[Function]}
+    >
+      0
+    </li>
+    <li
+      key="1"
+      onClick={[Function]}
+    >
+      1
+    </li>
+    <li
+      key="2"
+      onClick={[Function]}
+    >
+      2
+    </li>
+    <li
+      key="3"
+      onClick={[Function]}
+    >
+      3
+    </li>
+    <li
+      key="4"
+      onClick={[Function]}
+    >
+      4
+    </li>
+  </ul>
+</div>
+`;
