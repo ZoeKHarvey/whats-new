@@ -3,7 +3,6 @@ import './NewsArticle.css';
 import arrow from '../../images/right-arrow.svg';
 
 const NewsArticle = ({ headline, image, description, url} ) => {
-  console.log(url)
 
   return (
     <article className="news">
