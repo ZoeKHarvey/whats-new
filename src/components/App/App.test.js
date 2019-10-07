@@ -16,5 +16,13 @@ describe('App', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it('should update state of currentSubject when selectSubject is called', () => {
+    const wrapper = shallow(<App />);
+    const mockSelectSubject = 'Local'
+    const expected = 'Local';
 
+    wrapper.instance().selectNews(mockSelectSubject)
+    expect(wrapper.state('currentSubject')).toEqual(expected);
+  });
 })
+
