@@ -28,4 +28,17 @@ describe('SearchForm', () => {
     expect(searchArticle).toHaveBeenCalled();
   });
 
+  it('should call searchArticle when on change happens', () => {
+    const mockSearch = jest.fn()
+    const mockInput = { target: { value: 'this is a value' } };
+    const wrapper = shallow(<SearchForm searchArticle={mockSearch}/>)
+
+    wrapper.instance().handleChange(mockInput)
+
+    expect(wrapper.state().search).toEqual('this is a value')
+
+    wrapper.find('input').simulate('change', mockInput)
+    expect(wrapper.instance().props.searchArticle).toHaveBeenCalled()
+  });
+
 })

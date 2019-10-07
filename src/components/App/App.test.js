@@ -24,5 +24,7 @@ describe('App', () => {
     wrapper.instance().selectSubject(mockSelectSubject)
     expect(wrapper.state('currentSubject')).toEqual(expected);
   });
+
+
 })
 
