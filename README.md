@@ -18,3 +18,6 @@ A news app built on React, tested with enzyme/jest and informed by a news API.
 * npm install
 * Run npm start in your terminal and the app should appear in your browser
 
+#### OR
+Use the app live [here](https://zoekharvey.github.io/whats-new/)
+
