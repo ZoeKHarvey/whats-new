@@ -15,7 +15,7 @@ describe('NewsArticle', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("should change data upon the local category being selected", () => {
+  it("should change data to first index on click", () => {
     const mockChangeData = jest.fn();
     const wrapper = shallow(
       <Menu
@@ -36,6 +36,75 @@ describe('NewsArticle', () => {
       .simulate("click", mockEvent);
 
     expect(mockChangeData).toHaveBeenCalledWith("1");
+  });
+
+  it("should change data to second index on click", () => {
+    const mockChangeData = jest.fn();
+    const wrapper = shallow(
+      <Menu
+        selectSubject={ mockChangeData} 
+        categories="12345" key="1"
+      />
+    );
+
+    const mockEvent = {
+      target: {
+        id: "Local"
+      }
+    };
+
+    wrapper
+      .find("li")
+      .at(1)
+      .simulate("click", mockEvent);
+
+    expect(mockChangeData).toHaveBeenCalledWith("2");
+  });
+
+  it("should change data to third index on click", () => {
+    const mockChangeData = jest.fn();
+    const wrapper = shallow(
+      <Menu
+        selectSubject={ mockChangeData} 
+        categories="12345" key="1"
+      />
+    );
+
+    const mockEvent = {
+      target: {
+        id: "Local"
+      }
+    };
+
+    wrapper
+      .find("li")
+      .at(2)
+      .simulate("click", mockEvent);
+
+    expect(mockChangeData).toHaveBeenCalledWith("3");
+  });
+
+  it("should change data to fourth index on click", () => {
+    const mockChangeData = jest.fn();
+    const wrapper = shallow(
+      <Menu
+        selectSubject={ mockChangeData} 
+        categories="12345" key="1"
+      />
+    );
+
+    const mockEvent = {
+      target: {
+        id: "Local"
+      }
+    };
+
+    wrapper
+      .find("li")
+      .at(3)
+      .simulate("click", mockEvent);
+
+    expect(mockChangeData).toHaveBeenCalledWith("4");
   });
 
 
