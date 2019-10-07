@@ -21,7 +21,7 @@ describe('App', () => {
     const mockSelectSubject = 'Local'
     const expected = 'Local';
 
-    wrapper.instance().selectNews(mockSelectSubject)
+    wrapper.instance().selectSubject(mockSelectSubject)
     expect(wrapper.state('currentSubject')).toEqual(expected);
   });
 })
