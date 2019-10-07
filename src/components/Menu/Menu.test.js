@@ -14,4 +14,31 @@ describe('NewsArticle', () => {
 
     expect(wrapper).toMatchSnapshot();
   });
+
+  it("should change data upon the local category being selected", () => {
+    const mockChangeData = jest.fn();
+    const wrapper = shallow(
+      <Menu
+        selectSubject={ mockChangeData} 
+        categories="1 2 3 4 5" key="1"
+      />
+    );
+
+    const mockEvent = {
+      target: {
+        id: "Local"
+      }
+    };
+
+    wrapper
+      .find("li")
+      .at(0)
+      .simulate("click", mockEvent);
+
+    expect(mockChangeData).toHaveBeenCalledWith("1");
+  });
+
+
+
+
 });

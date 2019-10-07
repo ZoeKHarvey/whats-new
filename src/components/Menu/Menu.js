@@ -17,8 +17,5 @@ const Menu = ({selectSubject, categories}) => {
 
 export default Menu;
 
-// map through menu tabs
-// return out <li> instead of buttons to make tabs easier?
-// this.state is an object, object.keys?
-// pass through state?
+
 
